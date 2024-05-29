@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", "Ubuntu", sans-serif;
+  height: 100vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 24px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center;
+}
+
+.cancel {
+  width: 700px;
+  height: 100px;
+}
+
+.product {
+  display: flex;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.05px;
+  color: #242d60;
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+img {
+  border-radius: 6px;
+  margin: 10px;
+  width: 54px;
+  height: 57px;
+}
+h3,
+h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.154px;
+  color: #242d60;
+  margin: 0;
+}
+h5 {
+  opacity: 0.5;
+}
+button {
+  height: 36px;
+  background: #556cd6;
+  color: white;
+  width: 100%;
+  font-size: 14px;
+  border: 0;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.6;
+  border-radius: 0 0 6px 6px;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+}
+button:hover {
+  opacity: 0.8;
+}
+
+.image {
+  width: 30%;
+  height: 30%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  border: 1px solid #000;
+  width: 700px;
+  max-height: 500px;
+
+  overflow-y: scroll;
+}
+
+.go-back-link {
+  font-size: 20px;
+  line-height: 26px;
+  margin-top: 15px;
+}
+
+@media (max-width: 1000px) {
+  .info {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 610px) {
+  .info {
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    overflow-y: hidden;
+  }
+
+  p {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .info-inner {
+    position: absolute;
+    max-height: 500px;
+    overflow-y: scroll;
+    padding: 10px 35px;
+  }
+}
+
+@media (max-width: 450px) {
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
