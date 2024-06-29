@@ -1,5 +1,5 @@
-import firebase from '../../firebase.js';
-import { getDatabase, set, ref, get, push } from 'firebase/database';
+import firebase from "../firebase.js";
+import { getDatabase, set, ref, get, push } from "firebase/database";
 
 const db = getDatabase(firebase);
 
