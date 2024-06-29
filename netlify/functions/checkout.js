@@ -9,6 +9,7 @@ import serverless from 'serverless-http';
 dotenv.config();
 
 const app = express();
+const router = express.Router();
 // app.use(express.static('public'));
 // app.use('/images', express.static('images'));
 app.use(bodyparser.urlencoded({ extended: false }));
