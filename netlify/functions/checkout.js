@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import bodyparser from 'body-parser';
 import Stripe from 'stripe';
-import createPurchase from './controllers/purchaseControllers.js';
+// import createPurchase from './controllers/purchaseControllers.js';
 import dotenv from 'dotenv';
 import serverless from 'serverless-http';
 
